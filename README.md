@@ -7,7 +7,8 @@ Requirements:<br>
 1 - AppScan Enterprise and AppScan Dynamic Analysis tool.<br>
 2 - Gitlab Runner for Linux, because this YAML will run in Linux Environment.<br>
 3 - Optional: You can use a Login Recorded file. Generate the file and copy in repository root folder.<br>
-<br>
+4 - Fill variables.<br>
+4.1 - About Security Gate, the options to sevSecGw are criticalIssues, highIssues, mediumIssues and lowIssues.The maxIssuesAllowed is the amount of issues in selected sevSecGw.<br>
 
 ```yaml
 variables:
