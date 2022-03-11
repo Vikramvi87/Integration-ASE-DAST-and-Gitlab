@@ -8,7 +8,7 @@ Requirements:<br>
 2 - Gitlab Runner for Linux, because this YAML will run in Linux Environment.<br>
 3 - Optional: You can use a Login Recorded file. Generate the file and copy in repository root folder.<br>
 4 - Fill variables.<br>
-4.1 - About Security Gate, the options to sevSecGw are criticalIssues, highIssues, mediumIssues and lowIssues.The maxIssuesAllowed is the amount of issues in selected sevSecGw. Example: If you set sevSecGw as criticalIssues, maxIssuesAllowed as 10 and the scan result found 11 criticalIssues, the build will fail.<br>
+4.1 - About Security Gate, the sevSecGw options are criticalIssues, highIssues, mediumIssues and lowIssues.The maxIssuesAllowed is the amount of issues in selected sevSecGw. Example: If you set sevSecGw as criticalIssues, maxIssuesAllowed as 10 and the scan result found 11 criticalIssues, the build will fail.<br>
 
 ```yaml
 variables:
