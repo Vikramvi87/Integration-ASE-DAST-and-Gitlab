@@ -103,18 +103,22 @@ scan-job:
   - >
     if [ "$criticalIssues" -gt "$maxIssuesAllowed" ] && [ "$sevSecGw" == "criticalIssues" ]
       then
+        echo "The company policy permit less than $maxIssuesAllowed $sevSecGw severity"
         echo "Security Gate build failed"
         exit 1
     elif [ "$highIssues" -gt "$maxIssuesAllowed" ] && [ "$sevSecGw" == "highIssues" ]
       then
+        echo "The company policy permit less than $maxIssuesAllowed $sevSecGw severity"
         echo "Security Gate build failed"
         exit 1
     elif [ "$mediumIssues" -gt "$maxIssuesAllowed" ] && [ "$sevSecGw" == "mediumIssues" ]
       then
+        echo "The company policy permit less than $maxIssuesAllowed $sevSecGw severity"
         echo "Security Gate build failed"
         exit 1
     elif [ "$lowIssues" -gt "$maxIssuesAllowed" ] && [ "$sevSecGw" == "lowIssues" ]
       then
+        echo "The company policy permit less than $maxIssuesAllowed $sevSecGw severity"
         echo "Security Gate build failed"
         exit 1
     fi
